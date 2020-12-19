@@ -1,9 +1,10 @@
+url = str(input("url adresinizi giriniz:"))
 
-
-eposta = str(input("e posta adresini giriniz:"))
-if "@" and ".com" in eposta:
-    print("sifre giriniz.")
-elif "@" and "edu.tr" in eposta:
-    print("sifre giriniz.")
+if "www." and " .com" in url:
+    print("Dogru bir url.")
+elif "www." and ".org" in url:
+    print("dogru bir url.")
+elif "www." and ".net" in url:
+    print("dogru bir url.")
 else:
-    print("e posta yanlis!.")
+    print("Girdiginiz url yi kontrol ediniz.")
